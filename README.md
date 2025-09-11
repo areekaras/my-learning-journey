@@ -49,7 +49,7 @@ The detailed, multi-month checklist for all courses is located in the main roadm
 ## 📂 Repository Structure
 
 All notes and learning artifacts are organized in this repository for easy access and review.
-
+```
 /my-learning-journey
 |
 |-- 01_IOS_ESSENTIAL_DEV/     # Summaries & code from the iOS Lead Program
@@ -65,3 +65,4 @@ All notes and learning artifacts are organized in this repository for easy acces
 |-- ROADMAP.md                # The detailed, multi-month course plan
 |
 |-- README.md                 # This file - The journey's mission control
+```
