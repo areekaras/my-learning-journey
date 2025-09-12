@@ -6,7 +6,7 @@
 > 3.  Complete the **Phase 1** checklist *before* you begin.
 > 4.  Take your notes directly under the **Phase 2** headings.
 > 5.  Complete the **Phase 3** section *after* your session to solidify your learning.
-> 6.  For more details, refer **[ACTIVE_LEARNING_CHECKLIST](./TEMPLATES/ACTIVE_LEARNING_CHECKLIST.md)**
+> 6.  For more details, refer **[ACTIVE_LEARNING_CHECKLIST](./ACTIVE_LEARNING_CHECKLIST.md)**
 
 ---
 
