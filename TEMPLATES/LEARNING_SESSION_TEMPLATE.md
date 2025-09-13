@@ -13,7 +13,6 @@
 ### **Metadata**
 - **Date:** `DD-MM-YYYY`
 - **Source:** (e.g., "Essential Dev, Networking Module, Video 3")
-- **Status:** `In Progress` | `Completed` | `Needs Review`
 
 ---
 
@@ -30,6 +29,9 @@
 *My structured notes, guided by deep questions.*
 
 - [ ] **Embrace the Struggle:** Attempt problems on your own for 15-20 mins before seeking hints.
+
+#### Notes
+*(Your notes here...)*
 
 #### 1. What specific problem does this concept solve?
 *(Your notes here...)*
