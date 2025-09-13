@@ -5,7 +5,6 @@
 ### **Metadata**
 - **Date:** `13-09-2025`
 - **Source:** https://academy.essentialdeveloper.com/ios-lead-essentials/447455/resources/8528509
-- **Status:** `In Progress`
 
 ---
 
