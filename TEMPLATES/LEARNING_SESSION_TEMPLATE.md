@@ -11,7 +11,7 @@
 ---
 
 ### **Metadata**
-- **Date:** `YYYY-MM-DD`
+- **Date:** `DD-MM-YYYY`
 - **Source:** (e.g., "Essential Dev, Networking Module, Video 3")
 - **Status:** `In Progress` | `Completed` | `Needs Review`
 
