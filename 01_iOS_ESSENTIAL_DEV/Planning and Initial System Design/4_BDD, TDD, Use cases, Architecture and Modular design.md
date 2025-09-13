@@ -35,7 +35,7 @@
 - BDD can be more effective when we focus on meaningful discussions instead of tools (or even testing)
 - As a developer, It is our job to help the business to understand the technical challenges.
 - Use cases is an algorithmic view of what the system is doing
-- A use case is agnostic of delivery mechanisms
+- A use case is agnostic of delivery mechanisms (eg:- UI)
 - A use case encapsulates app-specific business rules
 
 
