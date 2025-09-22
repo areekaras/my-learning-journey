@@ -1,27 +1,19 @@
-# Learning Session: [TOPIC NAME]
-
-> **How to Use This Template:**
-> 1.  Copy this template into a new file for the topic you're about to study.
-> 2.  Fill out the **Metadata** section.
-> 3.  Complete the **Phase 1** checklist *before* you begin.
-> 4.  Take your notes directly under the **Phase 2** headings.
-> 5.  Complete the **Phase 3** section *after* your session to solidify your learning.
-> 6.  For more details, refer **[ACTIVE_LEARNING_CHECKLIST](./ACTIVE_LEARNING_CHECKLIST.md)**
+# Learning Session: Longest increasing Subsequence
 
 ---
 
 ### **Metadata**
-- **Date:** `DD-MM-YYYY`
-- **Source:** (e.g., "Essential Dev, Networking Module, Video 3")
+- **Date:** `17-09-2025`
+- **Source:** https://www.algoexpert.io/questions/longest-increasing-subsequence
 
 ---
 
 ### Phase 1: Preparation Checklist (Before the Session)
 *The setup for effective deep work.*
 
-- [ ] **Goal Set:** My specific goal for this session is clear.
-- [ ] **Environment Ready:** Phone is off/away, and my workspace is distraction-free.
-- [ ] **Brain Primed:** I have completed a 2-minute review of the previous related topic.
+- [x] **Goal Set:** My specific goal for this session is Answer and understand the question The longest increasing subsequence.
+- [x] **Environment Ready:** Phone is off/away, and my workspace is distraction-free.
+- [x] **Brain Primed:** I have completed a 2-minute review of the previous related topic.
 
 ---
 

@@ -1,37 +1,36 @@
-# Learning Session: [TOPIC NAME]
-
-> **How to Use This Template:**
-> 1.  Copy this template into a new file for the topic you're about to study.
-> 2.  Fill out the **Metadata** section.
-> 3.  Complete the **Phase 1** checklist *before* you begin.
-> 4.  Take your notes directly under the **Phase 2** headings.
-> 5.  Complete the **Phase 3** section *after* your session to solidify your learning.
-> 6.  For more details, refer **[ACTIVE_LEARNING_CHECKLIST](./ACTIVE_LEARNING_CHECKLIST.md)**
+# Learning Session: From Singletons and Globals to Proper Dependency Injection
 
 ---
 
 ### **Metadata**
-- **Date:** `DD-MM-YYYY`
-- **Source:** (e.g., "Essential Dev, Networking Module, Video 3")
+- **Date:** `14-09-2025`
+- **Source:** https://academy.essentialdeveloper.com/ios-lead-essentials/447455/resources/8516257
 
 ---
 
 ### Phase 1: Preparation Checklist (Before the Session)
 *The setup for effective deep work.*
 
-- [ ] **Goal Set:** My specific goal for this session is clear.
-- [ ] **Environment Ready:** Phone is off/away, and my workspace is distraction-free.
-- [ ] **Brain Primed:** I have completed a 2-minute review of the previous related topic.
+- [x] **Goal Set:** My specific goal for this session is to understand how dependency injection used for Singletons and Globals.
+- [x] **Environment Ready:** Phone is off/away, and my workspace is distraction-free.
+- [x] **Brain Primed:** I have completed a 2-minute review of the previous related topic.
 
 ---
 
 ### Phase 2: Active Notes (During the Session)
 *My structured notes, guided by deep questions.*
 
-- [ ] **Embrace the Struggle:** Attempt problems on your own for 15-20 mins before seeking hints.
+- [x] **Embrace the Struggle:** Attempt problems on your own for 15-20 mins before seeking hints.
 
 #### Notes
-*(Your notes here...)*
+- <img width="803" height="622" alt="image" src="https://github.com/user-attachments/assets/23f1caf7-31ef-445a-af99-be30db1538fb" />
+- Test Driven Development -> Arrange - Act - Assert
+- Dependency injections
+  - Constructor injection
+  - Property injection
+  - Parameter injection
+- 
+
 
 #### 1. What specific problem does this concept solve?
 *(Your notes here...)*
