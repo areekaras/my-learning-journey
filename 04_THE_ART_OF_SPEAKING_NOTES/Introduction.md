@@ -26,14 +26,14 @@
 
 #### Notes
 
-1. Main goal of this course
-- Learn to formulate your thoughts to vividly, concisely, and clearly in conversation, in offline presentaions, and on the camera.
-2. 5 elements of confident and convincing speach
-  1. Style (How you talk)
-  2. Content (What you say)
-  3. Contact (with Whom you are speaking)
-  4. State (Where your speach is coming from)
-  5. Goal
+1.  Main goal of this course
+    -   Learn to formulate your thoughts to vividly, concisely, and clearly in conversation, in offline presentaions, and on the camera.
+2.  5 elements of confident and convincing speach
+    1.  Style (How you talk)
+    2.  Content (What you say)
+    3.  Contact (with Whom you are speaking)
+    4.  State (Where your speach is coming from)
+    5.  Goal
 
 ---
 
