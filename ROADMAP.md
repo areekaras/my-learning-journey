@@ -11,18 +11,18 @@
   - [x] Review the remaining modules and projects.
   - [x] Break down the course into a checklist of videos and assignments.
 - [ ] **Essential Dev Course Checklist**
-  - [ ] Analyse github with course material and understand previous learning stage
-  - [ ] **Planning, Initial System design**
-    - [ ] Singleton
-    - [ ] Intro to dependency diagram and composition
-    - [ ] Into to modular design
-    - [ ] BDD, TDD, Use cases, Architectures and Modular design
-    - [ ] Effective developing Swift apps before backend/design ready
+  - [x] Analyse github with course material and understand previous learning stage
+  - [x] **Planning, Initial System design**
+    - [x] Singleton
+    - [x] Intro to dependency diagram and composition
+    - [x] Into to modular design
+    - [x] BDD, TDD, Use cases, Architectures and Modular design
+    - [x] Effective developing Swift apps before backend/design ready
   - [ ] **Networking**
-    - [ ] Set up start up project and automated testing set up guide
-    - [ ] From Singleton and Global to proper Dependency injection
-    - [ ] Asserting a captured value is not enought + cross module access control
-    - [ ] Handling errors + Stubbing vs Spying + Handling invalid paths
+    - [x] Set up start up project and automated testing set up guide
+    - [x] From Singleton and Global to proper Dependency injection
+    - [x] Asserting a captured value is not enought + cross module access control
+    - [x] Handling errors + Stubbing vs Spying + Handling invalid paths
     - [ ] A classicist TDD approach (No mocking) to mapping JSON with Decodable protocols + Domain Specific Models
     - [ ] Automating memory leak detection + Preventing a (Way too common) async bug
     - [ ] Conforming to Feature Abstractions while maintaining System Modularity + Keeping Test details out of production with enum pattern matching and async expectations
@@ -166,7 +166,7 @@
   - [x] Review the course structure and exercises.
   - [x] Create a checklist of modules to complete.
 - [ ] **Course Checklist**
-  - [ ] Introduction
+  - [x] Introduction
   - [ ] Module 1. Speak with Impact: Master non verbal power
   - [ ] Module 2. Keep them hooked: Build irresistible speeches
   - [ ] Module 3. Win any audience: Command attention
