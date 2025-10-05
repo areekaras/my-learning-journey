@@ -1,13 +1,5 @@
 # Learning Session: [TOPIC NAME]
 
-> **How to Use This Template:**
-> 1.  Copy this template into a new file for the topic you're about to study.
-> 2.  Fill out the **Metadata** section.
-> 3.  Complete the **Phase 1** checklist *before* you begin.
-> 4.  Take your notes directly under the **Phase 2** headings.
-> 5.  Complete the **Phase 3** section *after* your session to solidify your learning.
-> 6.  For more details, refer **[ACTIVE_LEARNING_CHECKLIST](./ACTIVE_LEARNING_CHECKLIST.md)**
-
 ---
 
 ### **Metadata**
@@ -33,17 +25,6 @@
 #### Notes
 *(Your notes here...)*
 
-#### 1. What specific problem does this concept solve?
-*(Your notes here...)*
-
-#### 2. How does this connect to what I already know?
-*(Your notes here...)*
-
-#### 3. What are the key trade-offs or edge cases?
-*(Your notes here...)*
-
-#### 4. How would I explain this to a beginner? (The Simple Analogy)
-*(Your notes here...)*
 
 ---
 
