@@ -3,7 +3,7 @@
 ---
 
 ### **Metadata**
-- **Date:** `07-10-2025`
+- **Date:** `07-10-2025`, `08-10-2025`
 - **Source:** (e.g., "Essential Dev, Networking Module, Video 3")
 
 ---
