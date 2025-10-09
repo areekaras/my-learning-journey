@@ -1,0 +1,67 @@
+# Learning Session: How Many Apps Get Wrong About Reachability and How to get it right
+
+---
+
+### **Metadata**
+- **Date:** `10-10-2025`
+- **Source:** https://academy.essentialdeveloper.com/ios-lead-essentials/447455/resources/9572284
+---
+
+### Phase 1: Preparation Checklist (Before the Session)
+*The setup for effective deep work.*
+
+- [x] **Goal Set:** My specific goal for this session is clear.
+- [x] **Environment Ready:** Phone is off/away, and my workspace is distraction-free.
+- [x] **Brain Primed:** I have completed a 2-minute review of the previous related topic.
+
+---
+
+### Phase 2: Active Notes (During the Session)
+
+
+#### Notes
+
+---
+
+# Network Reachability in iOS
+
+### The Common Mistake (What to Avoid)
+
+-   **Never pre-flight**: Do not use `NWPathMonitor` or other reachability APIs to check for a connection *before* making a network request. This is unreliable due to race conditions.
+-   **Apple's Golden Rule**: "Always attempt to make a connection."
+
+### The Correct Approach
+
+-   **Attempt First, Diagnose Later**: Make the request first. If it fails, *then* you can use reachability APIs to help diagnose the cause of the failure or to schedule an automatic retry.
+
+-   **Use `URLSessionConfiguration.waitsForConnectivity`**: (iOS 11+) Set this to `true`. The session will automatically wait for a connection to become available before starting a task.
+    -   It has a default timeout of 7 days, which you can change with `timeoutIntervalForResource`.
+    -   If the connection drops *during* a request, it will still fail; this flag is for establishing the initial connection.
+
+-   **Delegate for Waiting State**: Use the `urlSession(_:taskIsWaitingForConnectivity:)` delegate method to be notified when a task is waiting, allowing you to update the UI.
+    -   Remember to invalidate the session (`session.invalidateAndCancel()`) to avoid memory leaks from the delegate.
+
+
+### Handling Specific Network Conditions
+
+-   **Cellular Access**: To prevent requests on cellular, set `allowsCellularAccess` to `false` on the `URLRequest` or `URLSessionConfiguration` (before creating the session).
+
+-   **Expensive Networks (iOS 13+)**: Use `allowsExpensiveNetworkAccess` to control requests on networks the system considers expensive (e.g., cellular, personal hotspots).
+
+-   **Low Data Mode (iOS 13+)**: Use `allowsConstrainedNetworkAccess` to control requests when the user has enabled Low Data Mode.
+
+**Key Takeaway**: Don't check the network status yourself. Instead, set constraints on the `URLSessionConfiguration`, attempt the request, and handle the success or failure result.
+
+
+---
+
+### Phase 3: Proof of Learning (After the Session)
+*This is where the knowledge becomes permanent. This section is completed from memory.*
+
+#### My "Blank Page" Summary (Feynman Technique)
+*(Write your summary of the topic here without looking at your notes from Phase 2. Draw a diagram if it helps.)*
+
+#### Consolidation Checklist
+- [ ] **Teach-Back Complete:** I have stood up and explained this concept out loud for 60 seconds.
+- [ ] **Next-Day Review Scheduled:** I have added a 5-minute task to my plan for tomorrow to review this note.
+- [ ] **Weekly Review Scheduled:** I have added this note to my list for the upcoming "Weekly Knowledge Review" session.
