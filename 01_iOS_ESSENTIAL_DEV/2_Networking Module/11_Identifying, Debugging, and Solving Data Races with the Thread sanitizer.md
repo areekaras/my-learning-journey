@@ -22,7 +22,37 @@
 
 #### Notes
 
+---
 
+# Data Races & Thread Sanitizer
+
+### Key Concepts
+
+-   **Data Race**: Occurs when multiple threads access the same memory without synchronization, and at least one access is a **write**. This can cause unpredictable behavior and memory corruption.
+
+-   **Thread Sanitizer**: An LLVM tool that detects data races at runtime.
+    -   **Performance Cost**: It's resource-intensive (2-20x CPU slowdown, 5-10x memory increase).
+    -   **When to Use**: Enable it periodically for local development and **keep it enabled on the CI scheme**.
+
+
+### Finding & Fixing Data Races
+
+-   **Common Cause**: A combination of **global shared state** (like a static variable) and **background threading** (like `URLSession`'s completion handlers).
+
+-   **The Problem Scenario**: A test finishes, but a background network request from that test continues running. A new test starts and writes to the same global variable that the background task is still reading.
+
+-   <img width="985" height="403" alt="image" src="https://github.com/user-attachments/assets/eb3362f8-1536-40ed-8acd-b0eba5193005" />
+
+-   **The Solution**: Ensure all operations finish before a test method returns. Avoid mutable global state whenever possible.
+
+-   <img width="1183" height="385" alt="image" src="https://github.com/user-attachments/assets/3317dece-67b4-4486-85ad-ca74ba01cbae" />
+
+
+### Best Practices
+
+-   Run the Thread Sanitizer locally before pushing to CI to catch issues faster.
+-   Be aware of the performance impact on CI servers.
+-   Use the **Dispatch** framework (e.g., queues, locks) to synchronize memory access when shared state between threads is unavoidable.
 
 
 ---
