@@ -1,4 +1,4 @@
-# Learning Session: Union Find
+# Learning Session: Union Find (Disjoint Set)
 
 ---
 
