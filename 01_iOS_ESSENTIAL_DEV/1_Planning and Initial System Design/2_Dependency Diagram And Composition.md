@@ -45,17 +45,6 @@
      - A dashed line with filled head denotes weak dependency
   
 
-#### 1. What specific problem does this concept solve?
-
-#### 2. How does this connect to what I already know?
-*(Your notes here...)*
-
-#### 3. What are the key trade-offs or edge cases?
-*(Your notes here...)*
-
-#### 4. How would I explain this to a beginner? (The Simple Analogy)
-*(Your notes here...)*
-
 ---
 
 ### Phase 3: Proof of Learning (After the Session)
