@@ -90,6 +90,70 @@ So, the diameter at node 3 is the **maximum** of:
 
 We can solve this by starting at the leaves and passing this information up to the root."
 
+### Step-by-Step Example Trace
+
+Let's trace the `getTreeInfo` function as it works its way up from the leaves of the example tree. Remember, for each node, the function returns a `(diameter, height)` pair.
+
+**1. The Leaves:**
+The recursion first travels all the way down to the leaf nodes: `9`, `2`, and `6`.
+* For **Node 9**, its children are `nil`. The base case returns `(d:0, h:0)` for both.
+    * `longestPathThroughRoot` = `0 + 0 = 0`
+    * `maxDiameterSoFar` = `max(0, 0) = 0`
+    * `currentDiameter` = `max(0, 0) = 0`
+    * `currentHeight` = `1 + max(0, 0) = 1`
+    * **Node 9 returns `(d:0, h:1)` to its parent, Node 8.**
+* Similarly, **Node 2 returns `(d:0, h:1)`** and **Node 6 returns `(d:0, h:1)`** to their respective parents.
+
+**2. Nodes Above the Leaves:**
+* **Node 8** (parent of 9):
+    * Gets `leftInfo = (d:0, h:1)` from Node 9.
+    * Gets `rightInfo = (d:0, h:0)` from its `nil` right child.
+    * `longestPathThroughRoot` = `1 (left height) + 0 (right height) = 1`
+    * `maxDiameterSoFar` = `max(0, 0) = 0`
+    * `currentDiameter` = `max(1, 0) = 1`
+    * `currentHeight` = `1 + max(1, 0) = 2`
+    * **Node 8 returns `(d:1, h:2)` to its parent, Node 7.**
+* **Node 5** (parent of 6):
+    * Gets `leftInfo = (d:0, h:0)`.
+    * Gets `rightInfo = (d:1, h:1)`.
+    * Calculates and **returns `(d:1, h:2)` to its parent, Node 4.**
+
+**3. Nodes at the Next Level Up:**
+* **Node 7** (parent of 8):
+    * Gets `leftInfo = (d:1, h:2)` from Node 8.
+    * Gets `rightInfo = (d:0, h:0)`.
+    * `longestPathThroughRoot` = `2 + 0 = 2`
+    * `maxDiameterSoFar` = `max(1, 0) = 1`
+    * `currentDiameter` = `max(2, 1) = 2`
+    * `currentHeight` = `1 + max(2, 0) = 3`
+    * **Node 7 returns `(d:2, h:3)` to its parent, Node 3.**
+* **Node 4** (parent of 5):
+    * Gets `leftInfo = (d:0, h:0)`.
+    * Gets `rightInfo = (d:1, h:2)`.
+    * Calculates and **returns `(d:2, h:3)` to its parent, Node 3.**
+
+**4. The Crucial Node: Node 3**
+This is where the true diameter is discovered.
+* Gets `leftInfo = (d:2, h:3)` from Node 7.
+* Gets `rightInfo = (d:2, h:3)` from Node 4.
+* `longestPathThroughRoot` = `3 (left height) + 3 (right height) = 6`
+* `maxDiameterSoFar` = `max(2, 2) = 2` (the largest diameter found in its children's worlds)
+* `currentDiameter` = `max(longestPathThroughRoot, maxDiameterSoFar)` which is `max(6, 2) = 6`
+* `currentHeight` = `1 + max(3, 3) = 4`
+* **Node 3 returns `(d:6, h:4)` to its parent, the root Node 1.**
+
+**5. The Root Node: Node 1**
+* Gets `leftInfo = (d:6, h:4)` from Node 3.
+* Gets `rightInfo = (d:0, h:1)` from Node 2.
+* `longestPathThroughRoot` = `4 + 1 = 5`
+* `maxDiameterSoFar` = `max(6, 0) = 6`
+* `currentDiameter` = `max(5, 6) = 6`
+* `currentHeight` = `1 + max(4, 1) = 5`
+* **Node 1 returns the final object `(d:6, h:5)`.**
+
+The main function `binaryTreeDiameter` is called on the root, receives this final object, and returns its `diameter` property, which is **6**.
+
+
 ## Interview Walkthrough Script
 
 **(Interviewer: "How would you find the diameter of this binary tree?")**
