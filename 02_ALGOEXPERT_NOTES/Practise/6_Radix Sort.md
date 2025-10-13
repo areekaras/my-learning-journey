@@ -19,9 +19,7 @@
 
 ### Phase 2: Active Notes (During the Session)
 
-
 #### Notes
-
 
 
 
