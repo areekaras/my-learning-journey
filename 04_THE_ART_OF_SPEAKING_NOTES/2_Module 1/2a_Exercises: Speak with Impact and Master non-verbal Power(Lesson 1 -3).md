@@ -42,8 +42,10 @@
 * **Goal:** Apply vocal variety to a longer piece of text.
 * **Exercise:** Read a descriptive paragraph aloud. Beforehand, identify key descriptive words. When reading, use your voice (pitch, pace, volume) to "highlight" these words, making them stand out.
 
+
 ### 3. The "Punctuation Pause" Exercise
 * **Goal:** Use punctuation as a guide for professional phrasing and breath control.
 * **Exercise:** Read a text aloud, following two rules:
     1.  **Comma (,)**: Take a short, silent "catch-breath."
     2.  **Period (.)**: Take a full, relaxed breath.
+ 
