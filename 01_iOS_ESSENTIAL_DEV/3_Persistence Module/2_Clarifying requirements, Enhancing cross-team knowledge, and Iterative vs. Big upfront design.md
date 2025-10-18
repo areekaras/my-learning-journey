@@ -1,4 +1,4 @@
-# Learning Session: Clarifying requriements, Enhancing cross-domain knowledge, and Iterative vs. Big-upfront Design
+# Learning Session: Clarifying requriements, Enhancing cross-domain knowledge, and Iterative vs. Big Upfront Design
 
 ---
 
@@ -27,7 +27,7 @@
 # Notes: Requirements, Domain Knowledge, & Iterative Design
 
 
-### 1. Iterative Design vs. Big Up-Front Design (BUFD)
+### 1. Iterative Design vs. Big UpFront Design (BUFD)
 
 -   **The Problem with BUFD**: Trying to define 100% of requirements at the start is a trap. It leads to **analysis-paralysis** (getting stuck in planning, delivering nothing) and is inflexible, as requirements *always* change.
 -   **The Solution (Iterative Design)**:
