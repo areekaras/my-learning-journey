@@ -154,6 +154,108 @@ The `.map` on the `Optional` "opens" the optional box. The `.map` on the `Array`
 
 ---
 
+### Creating and Using `Result`
+
+Beyond just being a "box" with `.map`, Swift's `Result` type has several useful ways to be created and handled.
+
+**1. Creating with `.success` or `.failure`**
+
+This is the most direct way. You explicitly state whether the operation succeeded or failed.
+
+```swift
+enum MyError: Error { case oops }
+
+func alwaysSucceeds() -> Result<String, MyError> {
+    return .success("Yay!")
+}
+
+func alwaysFails() -> Result<String, MyError> {
+    return .failure(MyError.oops)
+}
+```
+
+**2. Creating with `Result(catching:)`**
+
+This initializer is specifically designed to convert a throwing function into a `Result`.
+
+ - If the throwing function returns a value, `Result(catching:)` captures it in a `.success`.
+ - If the throwing function throws an error, `Result(catching:)` captures it in a `.failure`.
+
+```Swift
+func mightThrow() throws -> Int {
+    if Bool.random() {
+        return 42
+    } else {
+        throw MyError.oops
+    }
+}
+
+// Wrap the call to the throwing function
+let resultFromThrowing: Result<Int, Error> = Result { try mightThrow() }
+// resultFromThrowing will be either .success(42) or .failure(MyError.oops)
+```
+
+This is useful when interacting with older APIs that use `throws`.
+
+**3. Accessing the Value (Handling the Result)**
+
+There are several ways to get the value out or handle the error:
+
+ - `switch` (Safest & Most Explicit): Exhaustively handles both cases.
+```Swift
+switch resultFromThrowing {
+case .success(let value):
+    print("Got value: \(value)")
+case .failure(let error):
+    print("Got error: \(error)")
+}
+```
+
+ - `if case` (If you only care about one case):
+```Swift
+if case .success(let value) = resultFromThrowing {
+    print("Success! Value is \(value)")
+}
+
+if case .failure(let error) = resultFromThrowing {
+    print("Failed with error: \(error)")
+}
+```
+
+ - `get()` (Can Throw): Returns the success value or throws the failure error. Useful for converting back to a throwing context.
+```Swift
+do {
+    let value = try resultFromThrowing.get()
+    print("Got value via get(): \(value)")
+} catch {
+    print("Caught error via get(): \(error)")
+}
+```
+
+**4. Transforming Values (The Functor/Monad Part)**
+
+These methods let you operate on the values inside the Result without unpacking them.
+
+ - `map`: Transforms the `.success` value (as discussed before).
+ - `flatMap`: Transforms the `.success` value using a function that itself returns a `Result`. It avoids nesting `Result<Result<...>>`.
+ - `mapError`: Transforms the `.failure` value.
+ - `flatMapError`: Transforms the `.failure` value using a function that itself returns a `Result`. This is useful for error recovery (trying an alternative operation if the first one fails).
+
+```Swift
+// mapError Example
+let networkResult: Result<Data, NetworkError> = .failure(.serverDown)
+let userFacingResult = networkResult.mapError { error -> String in
+    // Transform the specific NetworkError into a user-friendly String
+    switch error {
+    case .serverDown: return "The server is currently unavailable. Please try again later."
+    case .badURL: return "Something went wrong internally."
+    }
+}
+// userFacingResult is .failure("The server is currently unavailable...")
+```
+
+---
+
 ### Senior & Architect Interview Perspective
 
 **Q: "What is a Functor? Can you give me an example in Swift?"**
