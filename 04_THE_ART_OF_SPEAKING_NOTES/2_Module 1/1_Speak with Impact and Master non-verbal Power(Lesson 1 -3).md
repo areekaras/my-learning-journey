@@ -21,9 +21,6 @@
 ---
 
 ### Phase 2: Active Notes (During the Session)
-*My structured notes, guided by deep questions.*
-
-- [ ] **Embrace the Struggle:** Attempt problems on your own for 15-20 mins before seeking hints.
 
 #### Notes
 
@@ -69,10 +66,6 @@
 ---
 
 ### Phase 3: Proof of Learning (After the Session)
-*This is where the knowledge becomes permanent. This section is completed from memory.*
-
-#### My "Blank Page" Summary (Feynman Technique)
-*(Write your summary of the topic here without looking at your notes from Phase 2. Draw a diagram if it helps.)*
 
 #### Consolidation Checklist
 - [x] **Teach-Back Complete:** I have stood up and explained this concept out loud for 60 seconds.

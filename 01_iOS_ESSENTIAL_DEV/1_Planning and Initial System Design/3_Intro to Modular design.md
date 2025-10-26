@@ -18,7 +18,6 @@
 ---
 
 ### Phase 2: Active Notes (During the Session)
-*My structured notes, guided by deep questions.*
 
 - [x] **Embrace the Struggle:** Attempt problems on your own for 15-20 mins before seeking hints.
 
@@ -29,25 +28,11 @@
  - but as long we are following good principles, it is easily movable to separate modules and testable
  - As a developer or risk manager, we shouldn't be looking for a one-to-rule-them-all kind of a solution(it doesn't exist); intead, we can tailer a solutions based on the available resources and requirements.
 
-#### 1. What specific problem does this concept solve?
-*(Your notes here...)*
-
-#### 2. How does this connect to what I already know?
-*(Your notes here...)*
-
-#### 3. What are the key trade-offs or edge cases?
-*(Your notes here...)*
-
-#### 4. How would I explain this to a beginner? (The Simple Analogy)
-*(Your notes here...)*
 
 ---
 
 ### Phase 3: Proof of Learning (After the Session)
-*This is where the knowledge becomes permanent. This section is completed from memory.*
 
-#### My "Blank Page" Summary (Feynman Technique)
-*(Write your summary of the topic here without looking at your notes from Phase 2. Draw a diagram if it helps.)*
 
 #### Consolidation Checklist
 - [x] **Teach-Back Complete:** I have stood up and explained this concept out loud for 60 seconds.

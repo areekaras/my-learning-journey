@@ -18,45 +18,46 @@
     - [x] Into to modular design
     - [x] BDD, TDD, Use cases, Architectures and Modular design
     - [x] Effective developing Swift apps before backend/design ready
-  - [ ] **Networking**
+  - [x] **Networking**
     - [x] Set up start up project and automated testing set up guide
     - [x] From Singleton and Global to proper Dependency injection
     - [x] Asserting a captured value is not enought + cross module access control
     - [x] Handling errors + Stubbing vs Spying + Handling invalid paths
-    - [ ] A classicist TDD approach (No mocking) to mapping JSON with Decodable protocols + Domain Specific Models
-    - [ ] Automating memory leak detection + Preventing a (Way too common) async bug
-    - [ ] Conforming to Feature Abstractions while maintaining System Modularity + Keeping Test details out of production with enum pattern matching and async expectations
-    - [ ] Four approaches to Test(-Drive) Network requests; End-to-end, Subclassing and Protocol-based mocking, and URL Protocol stubbing
-    - [ ] Speeding up Development by Reducing debugging time, Minimising risks, Maximising learning and Decoupling tests from implementation details
-    - [ ] Randomising & Parallelising Tests, Integration tests with the backend and Automating a continuous integration(CI) pipeline
-    - [ ] Identifying, Debugging and Solving Data Races with Thread the sanitizer
-    - [ ] How many Apps get wrong about Reachability and How to get it right
-    - [ ] The Feed API Challenge
-  - [ ] **Networking Recap**
-    - [ ] Overview
-    - [ ] Key stats and insights to Maximise you Development output
-  - [ ] **Persistance**
-    - [ ] URLCache as a persistence alternative and Solving the infamous "But it woks on my machine" caching problem
-    - [ ] Clarifying requirements, Enhancing cross-team domain knowledge and Iterative vs Big upfront design
-    - [ ] Decoupling the Use-case business logic from frameworks + Controlling time + Multi method abstractions by following Interface segregation and Single responsibility principles
-    - [ ] Proper memory management of Captured references in Deeply nested modules + Identifying Highly coupled modules
-    - [ ] Visualising and solving high coupling issues by Decentralising components using Data Transfer Model Representations
-    - [ ] Performing Calendrical calculations correctly, Dealing with Coincidental duplication while respecting DRY principles, Decoupling the tests from implementation with tiny DSLs, and test triangulation to increase code coverage and confidence.
-    - [ ] Test-driving the cache invalidation + Identifying the complex (Bloated) functionality with Command Query Separation Principles
-    - [ ] Separating Queries and side-effects for Simplicity and Reusability, Choosing between Enum switching strategies, and Differentiating App-specific from App-agnostic logic  
-    - [ ] Separating App-Specific and App-agnostic and Framework logic, Entities vs Values Objects, Establishing single source of truth, and Designing side-effects free (Deterministic) Domain models with Functional Core, Imperative Shell Principles
-    - [ ] Dependency Inversion Anatomy (High level | Boundary | Low level), Defining inbox checklist and Contract Specs to Improve Collaboration and avoid Side effect bugs in Multithreaded Environments
-    - [ ] Persisitng/Retrieving Models with Codable + FileSystem, Test-driving in Integration with Real Frameworks Instead of Mocks & Measuring test times overhead with `xcodebuild`
-    - [ ] Deleting Models and Handling Errors with Codable+FileSystem, Making Async code look Sync in Tests to Eliminate Arrow Anti-pattern, and More Essential Test Guidelines to Improve Code Quality and Team communication
-    - [ ] Designing and Testing Thread-safe Components with DispatchQueue, Serial vs. Concurrent Queues, Thread-safe Value Types, and Avoiding Race Conditions
-    - [ ] Protocol vs Class Inheritance, Composite Reuse Principle, and Extracting Reusable Test Specs with Protocol Inheritance, Extensions and Composition
-    - [ ] Core Data Overview, Implementation, Concurrency Model, Trade-offs, Modeling & Testing Techniques, and Implementing Reusable Protocol Specs
-    - [ ] Finishing the Cache Implementation with Business Logic + Core Data Integration Tests—Unit vs. Integration: Pros/Cons, Performance, Complexity & How to Achieve The ideal Testing Pyramid Distribution
-    - [ ] The Feed Store Challenge
-  - [ ] **Persistance Recap**
-    - [ ] Overview
-    - [ ] Key Stats and Insight to Maximise Your Development Output
-    - [ ] Improving Model Composability With Swift's Standard Result and Optional Types, Map, Functors, and Powerful Refactorings Backed by Tests and Types (Compiler!)
+    - [x] A classicist TDD approach (No mocking) to mapping JSON with Decodable protocols + Domain Specific Models
+    - [x] Automating memory leak detection + Preventing a (Way too common) async bug
+    - [x] Conforming to Feature Abstractions while maintaining System Modularity + Keeping Test details out of production with enum pattern matching and async expectations
+    - [x] Four approaches to Test(-Drive) Network requests; End-to-end, Subclassing and Protocol-based mocking, and URL Protocol stubbing
+    - [x] Speeding up Development by Reducing debugging time, Minimising risks, Maximising learning and Decoupling tests from implementation details
+    - [x] Randomising & Parallelising Tests, Integration tests with the backend and Automating a continuous integration(CI) pipeline
+    - [x] Identifying, Debugging and Solving Data Races with Thread the sanitizer
+    - [x] How many Apps get wrong about Reachability and How to get it right
+    - [x] The Feed API Challenge
+  - [x] **Networking Recap**
+    - [x] Overview
+    - [x] Key stats and insights to Maximise you Development output
+  - [x] **Persistance**
+    - [x] URLCache as a persistence alternative and Solving the infamous "But it woks on my machine" caching problem
+    - [x] Clarifying requirements, Enhancing cross-team domain knowledge and Iterative vs Big upfront design
+    - [x] Decoupling the Use-case business logic from frameworks + Controlling time + Multi method abstractions by following Interface segregation and Single responsibility principles
+    - [x] Proper memory management of Captured references in Deeply nested modules + Identifying Highly coupled modules
+    - [x] Visualising and solving high coupling issues by Decentralising components using Data Transfer Model Representations
+    - [x] Performing Calendrical calculations correctly, Dealing with Coincidental duplication while respecting DRY principles, Decoupling the tests from implementation with tiny DSLs, and test triangulation to increase code coverage and confidence.
+    - [x] Test-driving the cache invalidation + Identifying the complex (Bloated) functionality with Command Query Separation Principles
+    - [x] Separating Queries and side-effects for Simplicity and Reusability, Choosing between Enum switching strategies, and Differentiating App-specific from App-agnostic logic  
+    - [x] Separating App-Specific and App-agnostic and Framework logic, Entities vs Values Objects, Establishing single source of truth, and Designing side-effects free (Deterministic) Domain models with Functional Core, Imperative Shell Principles
+    - [x] Dependency Inversion Anatomy (High level | Boundary | Low level), Defining inbox checklist and Contract Specs to Improve Collaboration and avoid Side effect bugs in Multithreaded Environments
+    - [x] Persisitng/Retrieving Models with Codable + FileSystem, Test-driving in Integration with Real Frameworks Instead of Mocks & Measuring test times overhead with `xcodebuild`
+    - [x] Deleting Models and Handling Errors with Codable+FileSystem, Making Async code look Sync in Tests to Eliminate Arrow Anti-pattern, and More Essential Test Guidelines to Improve Code Quality and Team communication
+    - [x] Designing and Testing Thread-safe Components with DispatchQueue, Serial vs. Concurrent Queues, Thread-safe Value Types, and Avoiding Race Conditions
+    - [x] Protocol vs Class Inheritance, Composite Reuse Principle, and Extracting Reusable Test Specs with Protocol Inheritance, Extensions and Composition
+    - [x] Core Data Overview, Implementation, Concurrency Model, Trade-offs, Modeling & Testing Techniques, and Implementing Reusable Protocol Specs
+    - [x] Finishing the Cache Implementation with Business Logic + Core Data Integration Tests—Unit vs. Integration: Pros/Cons, Performance, Complexity & How to Achieve The ideal Testing Pyramid Distribution
+    - [x] The Feed Store Challenge
+  - [x] **Persistance Recap**
+    - [x] Overview
+    - [x] Key Stats and Insight to Maximise Your Development Output
+  - [x] **Bonus**
+    - [x] Improving Model Composability With Swift's Standard Result and Optional Types, Map, Functors, and Powerful Refactorings Backed by Tests and Types (Compiler!)
   - [ ] **UI + Presentation Module**
     - [ ] Gathering Fast Feedback and Validating UI Design and Dev Decisions Through Realistic App Prototypes
     - [ ] Supporting Multiple Platforms with Swift Frameworks While Separating Platform-specific Components to Facilitate Loose Coupling and Speed up Development
@@ -94,11 +95,11 @@
   - [x] Break down the course into logical sections.
 - [ ] **Course Checklist** (Finish random 10 problems -> Crash course -> Make plan again)
   - [ ] **Random 10 Problems**
-    - [ ] 1. https://www.algoexpert.io/questions/longest-increasing-subsequence
-    - [ ] 2. https://www.algoexpert.io/questions/kruskals-algorithm
-    - [ ] 3. https://www.algoexpert.io/questions/binary-tree-diameter
-    - [ ] 4. https://www.algoexpert.io/questions/minimum-area-rectangle
-    - [ ] 5. https://www.algoexpert.io/questions/radix-sort
+    - [x] 1. https://www.algoexpert.io/questions/longest-increasing-subsequence
+    - [x] 2. https://www.algoexpert.io/questions/kruskals-algorithm
+    - [x] 3. https://www.algoexpert.io/questions/binary-tree-diameter
+    - [x] 4. https://www.algoexpert.io/questions/minimum-area-rectangle
+    - [x] 5. https://www.algoexpert.io/questions/radix-sort
     - [ ] 6. https://www.algoexpert.io/questions/invert-binary-tree
     - [ ] 7. https://www.algoexpert.io/questions/sweet-and-savory
     - [ ] 8. https://www.algoexpert.io/questions/union-find
@@ -167,8 +168,8 @@
   - [x] Create a checklist of modules to complete.
 - [ ] **Course Checklist**
   - [x] Introduction
-  - [ ] Module 1. Speak with Impact: Master non verbal power
-  - [ ] Module 2. Keep them hooked: Build irresistible speeches
+  - [x] Module 1. Speak with Impact: Master non verbal power
+  - [x] Module 2. Keep them hooked: Build irresistible speeches
   - [ ] Module 3. Win any audience: Command attention
   - [ ] Module 4. Unlock Charisma and Magnetism
   - [ ] Module 5. Think fast: Improvisation techniques
