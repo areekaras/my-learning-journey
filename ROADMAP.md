@@ -59,12 +59,12 @@
   - [x] **Bonus**
     - [x] Improving Model Composability With Swift's Standard Result and Optional Types, Map, Functors, and Powerful Refactorings Backed by Tests and Types (Compiler!)
   - [ ] **UI + Presentation Module**
-    - [ ] Gathering Fast Feedback and Validating UI Design and Dev Decisions Through Realistic App Prototypes
-    - [ ] Supporting Multiple Platforms with Swift Frameworks While Separating Platform-specific Components to Facilitate Loose Coupling and Speed up Development
-    - [ ] Apple MVC, Test-driving UIViewControllers, Dealing with UIKit's Inversion of Control & Temporal Coupling, and Decoupling Tests from UI Implementation Details
-    - [ ] Effectively Test-driving MVC UI with Multiple Views/Models/State, Efficiently Loading/Prefetching/Cancelling Image Requests, Inside-Out vs. Outside-In Development, and Identifying the Massive View Controller Anti-pattern by Following Design Principles
-    - [ ] Refactoring Massive View Controllers Into Multiple Tiny MVCs + Using Composers & Adapters to Reduce Coupling and Eliminate Redundant Dependencies
-    - [ ] MVVM: Reducing Boilerplate, Shifting Reusable Presentation Logic from Controllers into Cross-Platform (Stateful & Stateless) ViewModels, and Decoupling Presentation from UI Frameworks with Swift Generics
+    - [x] Gathering Fast Feedback and Validating UI Design and Dev Decisions Through Realistic App Prototypes
+    - [x] Supporting Multiple Platforms with Swift Frameworks While Separating Platform-specific Components to Facilitate Loose Coupling and Speed up Development
+    - [x] Apple MVC, Test-driving UIViewControllers, Dealing with UIKit's Inversion of Control & Temporal Coupling, and Decoupling Tests from UI Implementation Details
+    - [x] Effectively Test-driving MVC UI with Multiple Views/Models/State, Efficiently Loading/Prefetching/Cancelling Image Requests, Inside-Out vs. Outside-In Development, and Identifying the Massive View Controller Anti-pattern by Following Design Principles
+    - [x] Refactoring Massive View Controllers Into Multiple Tiny MVCs + Using Composers & Adapters to Reduce Coupling and Eliminate Redundant Dependencies
+    - [x] MVVM: Reducing Boilerplate, Shifting Reusable Presentation Logic from Controllers into Cross-Platform (Stateful & Stateless) ViewModels, and Decoupling Presentation from UI Frameworks with Swift Generics
     - [ ] MVP: Creating a Reusable and Cross-Platform Presentation Layer, Implementing Service Adapters, and Solving Cyclic Dependencies & Memory Management issues with the Proxy Pattern
     - [ ] Storyboard vs. Code: Layout, DI and Composition, Identifying the Constrained Construction DI Anti-pattern, and Optimizing Performance by Reusing Cells
     - [ ] Creating, Localizing, and Testing Customer Facing Strings in the Presentation Layer + NSLocalizedString Best Practices
@@ -88,6 +88,20 @@
   - [ ] **Main + Composition Module Recap**
     - [ ] Overview
     - [ ] Key Stats and Insight to Maximise Your Development Output
+  - [ ] [Bonus] Navigation + Advanced Patterns Module
+    - [ ] #001 - [Image Comments API] From Dependency Injection to Dependency Rejection (2 hr 20 min)
+    - [ ] #002 - [Image Comments Presentation] Reusable Presentation Logic (2 hr 32 min)
+    - [ ] #003 - [Image Comments UI] Reusable UI Components, Diffable Data Sources, Dynamic Type, Snapshot Testing (2 hr 45 min)
+    - [ ] #004 - [Image Comments Composition] Navigation and Feature Composition (2 hr 5 min)
+    - [ ] 🥇 The Image Comments Challenge
+    - [ ] #005 - Keyset Pagination with Caching Strategy (2 hr 49 min)
+    - [ ] #006 - Logging, Profiling, and Optimizing Infrastructure Services (1 hr 42 min)
+    - [ ] #007 - Async Injection: Decoupling the Domain from Infra Details (2 hr 7 min)
+  - [ ] [Bonus] Migrating to Swift Concurrency
+    - [ ] #001 - Complete Swift Concurrency Checking (56 min)
+  - [ ] Certification
+    - [ ] Certificate of Completion and Blue belt 🔵
+    - [ ] Blue to Purple Belt Journey
 
 #### **Objective 1.2: Master Data Structures & Algorithms (AlgoExpert)**
 - [x] **Analyze AlgoExpert Course Structure**
