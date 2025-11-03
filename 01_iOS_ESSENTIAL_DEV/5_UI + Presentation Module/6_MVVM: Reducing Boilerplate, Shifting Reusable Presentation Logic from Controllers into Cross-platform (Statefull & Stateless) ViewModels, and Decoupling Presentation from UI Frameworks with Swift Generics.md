@@ -1,4 +1,4 @@
-<img width="1000" height="435" alt="image" src="https://github.com/user-attachments/assets/52bbace8-543d-49e3-9b26-45eb5965e765" /># Learning Session: MVVM: Reducing Boilerplate, Shifting Reusable Presentation Logic from controllers into Cross-platform (Stateful & Stateless) ViewModels, and Decoupling Presentation from UI Frameworks with Swift Generics
+# Learning Session: MVVM: Reducing Boilerplate, Shifting Reusable Presentation Logic from controllers into Cross-platform (Stateful & Stateless) ViewModels, and Decoupling Presentation from UI Frameworks with Swift Generics
 
 ---
 
