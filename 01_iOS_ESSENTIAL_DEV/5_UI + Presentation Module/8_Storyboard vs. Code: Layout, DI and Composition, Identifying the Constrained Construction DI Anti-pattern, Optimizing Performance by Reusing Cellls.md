@@ -1,10 +1,10 @@
-# Learning Session: URLCache as Persistence Alternative and Solving the Infamous "But It works on my machine!" caching problem
+# Learning Session: Storyboard vs. Code: Layout, DI and Composition, Identifying the constrained Construction DI Anti-pattern, Optimizing Performance by Reusing Cells
 
 ---
 
 ### **Metadata**
-- **Date:** `10-10-2025`
-- **Source:** https://academy.essentialdeveloper.com/ios-lead-essentials/447455/resources/9193092
+- **Date:** `08-11-2025`
+- **Source:** https://academy.essentialdeveloper.com/ios-lead-essentials/447455/resources/11390253
 
 ---
 
