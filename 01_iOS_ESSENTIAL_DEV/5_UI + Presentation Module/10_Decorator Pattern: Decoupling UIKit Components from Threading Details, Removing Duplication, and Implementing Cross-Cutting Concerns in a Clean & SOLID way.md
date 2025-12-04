@@ -39,7 +39,8 @@ This lecture introduces the **Decorator Pattern** as a solution to a common arch
     -   The View Controller shouldn't know *where* the data comes from or *what thread* it arrives on. It should just receive data and display it.
     -   If we assume background threads and defensively dispatch to main everywhere, we create massive **duplication** and clutter.
 
--   **[Image Placeholder: Diagram showing "leaky" threading logic in VC]**
+-   <img width="871" height="641" alt="image" src="https://github.com/user-attachments/assets/313939ff-f940-4ac6-8921-b881a202ed56" />
+-   <img width="929" height="630" alt="image" src="https://github.com/user-attachments/assets/6dca356c-d17c-417d-a388-7dd9ecbaa0ef" />
 
 ---
 
@@ -75,6 +76,85 @@ We created a generic `MainQueueDispatchDecorator<T>` that wraps *any* object `T`
 
 -   **Safety Check**: It checks `Thread.isMainThread`. If we are already on the main thread, it executes immediately. If not, it dispatches async to the main queue.
 -   **Conformance**: We extend the Decorator to conform to specific protocols (like `<FeedLoader>` or `<FeedImageDataLoader>`) so it can be injected transparently.
+
+```Swift
+// 1. The Generic Threading Decorator
+// This class wraps any object `T` and provides a helper to dispatch to the main queue.
+
+import Foundation
+
+final class MainQueueDispatchDecorator<T> {
+    let decoratee: T
+    
+    init(decoratee: T) {
+        self.decoratee = decoratee
+    }
+    
+    func dispatch(completion: @escaping () -> Void) {
+        guard Thread.isMainThread else {
+            return DispatchQueue.main.async(execute: completion)
+        }
+        
+        completion()
+    }
+}
+
+// 2. Conforming to FeedLoader
+// We extend the decorator to adopt the specific protocol interface.
+// It forwards the 'load' call to the decoratee, but wraps the completion block
+// in our 'dispatch' helper.
+
+import EssentialFeed
+
+extension MainQueueDispatchDecorator: FeedLoader where T == FeedLoader {
+    func load(completion: @escaping (FeedLoader.Result) -> Void) {
+        decoratee.load { [weak self] result in
+            self?.dispatch { completion(result) }
+        }
+    }
+}
+
+// 3. Conforming to FeedImageDataLoader
+// We can extend the SAME decorator class to support other protocols too.
+
+extension MainQueueDispatchDecorator: FeedImageDataLoader where T == FeedImageDataLoader {
+    func loadImageData(from url: URL, completion: @escaping (FeedImageDataLoader.Result) -> Void) -> FeedImageDataLoaderTask {
+        return decoratee.loadImageData(from: url) { [weak self] result in
+            self?.dispatch { completion(result) }
+        }
+    }
+}
+```
+
+```Swift
+// 4. Usage in the Composition Root
+// The View Controller receives the *Decorated* loader, thinking it's just a normal loader.
+// It has no idea that threading logic has been injected.
+
+public final class FeedUIComposer {
+    
+    public static func feedComposedWith(feedLoader: FeedLoader, imageLoader: FeedImageDataLoader) -> FeedViewController {
+        
+        // Wrap the loader in the Decorator
+        let presentationAdapter = FeedLoaderPresentationAdapter(
+            feedLoader: MainQueueDispatchDecorator(decoratee: feedLoader)
+        )
+        
+        // ... View Controller creation ...
+        
+        presentationAdapter.presenter = FeedPresenter(
+            feedView: FeedViewAdapter(
+                controller: feedController,
+                // Wrap the image loader in the Decorator too
+                imageLoader: MainQueueDispatchDecorator(decoratee: imageLoader)
+            ),
+            loadingView: WeakRefVirtualProxy(feedController)
+        )
+        
+        return feedController
+    }
+}
+```
 
 ---
 
